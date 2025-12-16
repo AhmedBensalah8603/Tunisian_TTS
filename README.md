@@ -1,17 +1,3 @@
----
-language:
-- ar
-base_model:
-- SparkAudio/Spark-TTS-0.5B
-tags:
-- speech
-- arabic
-- spark
-- tts
-- text-to-speech
-license: fair-noncommercial-research-license
----
-
 # 🇹🇳  Tunisian_TTS
 
 This repository provides a production-ready **Tunisian Text-to-Speech (TTS)** model based on the Spark-TTS architecture. Fine-tuned on 300 hours of high-quality Modern Standard Arabic (MSA) audio, it delivers natural prosody, full diacritization support, and zero-shot voice cloning.
@@ -27,11 +13,13 @@ This repository provides a production-ready **Tunisian Text-to-Speech (TTS)** mo
 ## 📂 Project Structure
 
 Arabic_Spark_TTS/
-├── app.py                # Main application/API logic
-├── requirements.txt      # Python dependencies
-├── model/                # Local model weights and config
-├── testing.py            # Script for local inference testing
-└── samples/              # Audio reference samples
+├── app.py             # Main application / API logic
+├── requirements.txt   # Python dependencies
+├── model/             # Local model weights and config
+├── testing.py         # Script for local inference testing
+└── samples/           # Audio reference samples
+
+
 ## 🛠️ Local Setup
 
 ### 1. Install Dependencies
@@ -88,12 +76,3 @@ Colab Notebook: Try on Google Colab
 | crossfade_duration  | 0.08    | Seconds of overlap between text chunks          |
 | top_p               | 0.95    | Nucleus sampling threshold                       |
 
-🎧 Sample Output
-
-Input: "إِنَّ الدَّوْلَةَ لَهَا أَعْمَارٌ طَبِيعِيَّةٌ كَمَا لِلْأَشْخَاصِ..."
-
-Generated Audio:
-<audio controls src="https://cdn-uploads.huggingface.co/production/uploads/645098004f731658826cfe57/FCGgeIu1F89rvNI55aVIx.wav"></audio>
-
-Reference Audio:
-<audio controls src="https://cdn-uploads.huggingface.co/production/uploads/645098004f731658826cfe57/cA9Z77_P0Rm2-hu1eosOC.wav"></audio>

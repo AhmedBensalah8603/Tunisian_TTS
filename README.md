@@ -10,15 +10,6 @@ This repository provides a production-ready **Tunisian Text-to-Speech (TTS)** mo
 * **Production Ready**: Advanced audio post-processing (normalization, silence removal).
 * **Deployment Ready**: Compatible with Hugging Face Spaces and easily containerized.
 
-## 📂 Project Structure
-
-Arabic_Spark_TTS/
-├── app.py             # Main application / API logic
-├── requirements.txt   # Python dependencies
-├── model/             # Local model weights and config
-├── testing.py         # Script for local inference testing
-└── samples/           # Audio reference samples
-
 
 ## 🛠️ Local Setup
 
@@ -62,17 +53,4 @@ The model is trained exclusively on fully diacritized text (Tashkeel). Inputting
 ✅ Correct: إِنَّ الدَّوْلَةَ لَهَا أَعْمَارٌ طَبِيعِيَّةٌ
 
 ❌ Incorrect: ان الدولة لها اعمار طبيعية
-
-☁️ Deployment & Demos
-
-Interactive Access
-Hugging Face Space: Arabic Spark TTS Space
-Colab Notebook: Try on Google Colab
-
-| Parameter           | Default | Description                                      |
-|--------------------|---------|--------------------------------------------------|
-| temperature         | 0.8     | Controls randomness (higher = more expressive) |
-| max_chunk_length    | 300     | Max characters per processing block             |
-| crossfade_duration  | 0.08    | Seconds of overlap between text chunks          |
-| top_p               | 0.95    | Nucleus sampling threshold                       |
 
